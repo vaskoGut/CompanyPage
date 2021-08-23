@@ -25,7 +25,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # personal config
-config/development.js
+frontend/config/development.js
 
 # backend
 backend/web/app/wflogs
