@@ -61,7 +61,7 @@ class WYSIWYG extends Component {
               ?.split('/')
               .pop()
               .indexOf('.') > -1 ||
-            domNode.attribs.href.indexOf(config.wordpress.url.frontend) === -1
+            domNode.attribs.href.indexOf(config.wordpress.frontend) === -1
           ) {
             return <a {...domNode.attribs}>{this.renderChildren(domNode)}</a>;
           }

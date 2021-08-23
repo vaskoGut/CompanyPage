@@ -12,10 +12,7 @@ export const OptionsProvider = (props) => {
   const [cookies, setCookies] = useState({});
 
   const { error, data: options } = useQuery(GetSiteOptions, {});
-  const {
-    googleAnalytics,
-    siteOptions: { scriptsPixels },
-  } = options || {};
+  const { googleAnalytics, siteOptions: { scriptsPixels } = {} } = options || {};
 
   /**
    * Set cookies in context
