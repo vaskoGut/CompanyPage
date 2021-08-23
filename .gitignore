@@ -1,0 +1,49 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+.DS_Store
+.vscode
+*.code-workspace
+
+# dependencies
+node_modules/
+package-lock.json
+
+# testing
+/coverage
+
+# production
+/build
+/dist
+frontend/.next
+frontend/redirection.json
+frontend/report*.json
+
+# misc
+.DS_Store
+.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# personal config
+baseUrl.development.js
+
+# backend
+backend/web/app/wflogs
+backend/web/app/db.php
+backend/web/app/plugins/*
+!backend/web/app/plugins/.gitkeep
+backend/web/app/mu-plugins/*/
+!backend/web/app/mu-plugins/.gitkeep
+backend/web/app/upgrade
+backend/web/app/uploads/*
+!backend/web/app/uploads/.gitkeep
+backend/web/app/languages/*
+!backend/web/app/languages/.gitkeep
+backend/web/wp
+.env
+.env.*
+!.env.default
+backend/vendor
+wp-cli.local.yml
+*.log
+

@@ -13,7 +13,6 @@ add_filter('gal_set_login_cookie', function ($dosetcookie) {
   return $GLOBALS['pagenow'] == 'wp-login.php';
 });
 
-
 /**
  * Add support widget to dashboard #manysafety #muchsecure
  */
@@ -42,7 +41,7 @@ if (!defined('DISALLOW_FILE_EDIT')) {
 function hike_hide_update_notifications()
 {
   global $wp_version;
-  return(object) array('last_checked'=> time(),'version_checked'=> $wp_version,);
+  return (object) array('last_checked' => time(), 'version_checked' => $wp_version);
 }
 add_filter('pre_site_transient_update_core', 'hike_hide_update_notifications'); //hide updates for WordPress itself
 add_filter('pre_site_transient_update_plugins', 'hike_hide_update_notifications'); //hide updates for all plugins
@@ -56,7 +55,7 @@ function hike_get_current_user()
 {
   $current_user = wp_get_current_user();
 
-  if (! ( $current_user instanceof WP_User )) {
+  if (!($current_user instanceof WP_User)) {
     return false;
   }
 
@@ -97,43 +96,17 @@ add_action('wp_loaded', function () {
   }
   </style>';
   });
-
-
-  // Domains in this array will be able to make changes and install plugins and such
-  $allowed = array('gohike.nl');
-
-  if ($user = hike_get_current_user()) {
-    $email = $user->user_email;
-    $explodedEmail = explode('@', $email);
-    $domain = array_pop($explodedEmail);
-
-    if (! in_array($domain, $allowed)) {
-      // Remove admin menu items
-      add_action('admin_init', function () {
-        add_action('admin_menu', hike_remove_admin_menu_items());
-      });
-
-      // Remove ACF settings menu
-      add_filter('acf/settings/show_admin', '__return_false');
-
-      // Redirect users that attempt to go to plugins or themes
-      if ($_SERVER['PHP_SELF'] == '/wp-admin/plugins.php' || $_SERVER['PHP_SELF'] == '/wp-admin/themes.php' || $_SERVER['PHP_SELF'] == '/wp-admin/plugin-install.php') {
-        wp_redirect(admin_url());
-        exit;
-      }
-    }
-  }
 });
 
 /**
  * Unset WP REST /users endpoints
  */
-add_filter( 'rest_endpoints', function( $endpoints ){
-    if ( isset( $endpoints['/wp/v2/users'] ) ) {
-        unset( $endpoints['/wp/v2/users'] );
-    }
-    if ( isset( $endpoints['/wp/v2/users/(?P<id>[\d]+)'] ) ) {
-        unset( $endpoints['/wp/v2/users/(?P<id>[\d]+)'] );
-    }
-    return $endpoints;
+add_filter('rest_endpoints', function ($endpoints) {
+  if (isset($endpoints['/wp/v2/users'])) {
+    unset($endpoints['/wp/v2/users']);
+  }
+  if (isset($endpoints['/wp/v2/users/(?P<id>[\d]+)'])) {
+    unset($endpoints['/wp/v2/users/(?P<id>[\d]+)']);
+  }
+  return $endpoints;
 });
