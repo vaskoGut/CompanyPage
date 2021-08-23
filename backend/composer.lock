@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f1c9d07e6635c0b925d2ef56daee69f0",
+    "content-hash": "813cc0885741bfdc73c45cc83fa68d2e",
     "packages": [
         {
             "name": "ashhitch/wp-graphql-yoast-seo",
@@ -253,34 +253,6 @@
                 "source": "https://bitbucket.org/gohike/advanced-custom-fields-pro-mirror/src/0d14a9d0a99c53a823d2cde2e4c811541b6e2ea9/?at=5.8.7"
             },
             "time": "2020-09-01T10:20:31+00:00"
-        },
-        {
-            "name": "hike/googleappslogin-premium",
-            "version": "3.2.3",
-            "source": {
-                "type": "git",
-                "url": "git@bitbucket.org:gohike/googleappslogin-premium-mirror",
-                "reference": "c4f2e336484a291a19e213db9aea8db32e427387"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://bitbucket.org/gohike/googleappslogin-premium-mirror/get/c4f2e336484a291a19e213db9aea8db32e427387.zip",
-                "reference": "c4f2e336484a291a19e213db9aea8db32e427387",
-                "shasum": ""
-            },
-            "type": "wordpress-plugin",
-            "authors": [
-                {
-                    "name": "Massim Knaapen",
-                    "email": "massim@gohike.nl"
-                }
-            ],
-            "description": "Google Apps Login Premium mirror",
-            "homepage": "https://bitbucket.org/gohike/googleappslogin-premium-mirror",
-            "support": {
-                "source": "https://bitbucket.org/gohike/googleappslogin-premium-mirror/src/c4f2e336484a291a19e213db9aea8db32e427387/?at=master"
-            },
-            "time": "2020-02-17T13:54:29+00:00"
         },
         {
             "name": "hike/gravityforms",
@@ -1522,6 +1494,34 @@
         }
     ],
     "packages-dev": [
+        {
+            "name": "hike/googleappslogin-premium",
+            "version": "3.2.3",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:gohike/googleappslogin-premium-mirror",
+                "reference": "c4f2e336484a291a19e213db9aea8db32e427387"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/gohike/googleappslogin-premium-mirror/get/c4f2e336484a291a19e213db9aea8db32e427387.zip",
+                "reference": "c4f2e336484a291a19e213db9aea8db32e427387",
+                "shasum": ""
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Massim Knaapen",
+                    "email": "massim@gohike.nl"
+                }
+            ],
+            "description": "Google Apps Login Premium mirror",
+            "homepage": "https://bitbucket.org/gohike/googleappslogin-premium-mirror",
+            "support": {
+                "source": "https://bitbucket.org/gohike/googleappslogin-premium-mirror/src/c4f2e336484a291a19e213db9aea8db32e427387/?at=master"
+            },
+            "time": "2020-02-17T13:54:29+00:00"
+        },
         {
             "name": "roave/security-advisories",
             "version": "dev-latest",

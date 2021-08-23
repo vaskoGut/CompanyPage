@@ -30,10 +30,6 @@
     },
     {
       "type": "vcs",
-      "url": "git@bitbucket.org:gohike/googleappslogin-premium-mirror"
-    },
-    {
-      "type": "vcs",
       "url": "git@bitbucket.org:gohike/gravityforms-mirror"
     },
     {
@@ -68,7 +64,6 @@
     "wp-graphql/wp-graphql": "1.1.1",
     "wp-graphql/wp-graphql-acf": "0.3.1",
     "hike/advanced-custom-fields-pro": "5.8.7",
-    "hike/googleappslogin-premium": "^3",
     "hike/gravityforms": "^2.4",
     "hike/wp-graphql-jwt-authentication": "^0.4.1",
     "ashhitch/wp-graphql-yoast-seo": "4.11.0",
