@@ -46,8 +46,6 @@ const getPost = async (postType, variables, preview = false) => {
     token: preview?.token,
   });
 
-  console.log('data', data);
-
   // if home page query -> return it's first node
   if (postType === 'frontPage' && data) {
     data.page = data?.page?.nodes?.[0];
