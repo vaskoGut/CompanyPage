@@ -40,16 +40,10 @@ module.exports = withOptimizedImages({
       },
     ];
   },
-
+  future: {
+    webpack5: true,
+  },
   webpack(config) {
-    // Fixes npm packages that depend on `fs` module
-    // eslint-disable-next-line
-    config.node = {
-      fs: 'empty',
-      tls: 'empty',
-      net: 'empty',
-    };
-
     const originalEntry = config.entry;
     config.entry = async () => {
       const entries = await originalEntry();
