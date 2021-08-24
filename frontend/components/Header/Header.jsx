@@ -6,6 +6,7 @@ import SHeader from './styles';
 
 const Header = () => {
   const { loading, error, data } = useQuery(GetMainNav, {});
+
   const { menuItems: { nodes: menuItems } = {} } = data || {};
   if (error) return null;
 
