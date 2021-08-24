@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render correctly with children 1`] = `
+<styled.header>
+  <nav>
+    <styled.div
+      as="ul"
+      display="flex"
+      justifyContent="center"
+      mb={20}
+      p={0}
+    >
+      <styled.li
+        key="1"
+        mx={10}
+      >
+        <Link />
+      </styled.li>
+      <styled.li
+        key="2"
+        mx={10}
+      >
+        <Link />
+      </styled.li>
+      <styled.li
+        key="3"
+        mx={10}
+      >
+        <Link />
+      </styled.li>
+      <styled.li
+        key="4"
+        mx={10}
+      >
+        <Link />
+      </styled.li>
+      <styled.li
+        key="5"
+        mx={10}
+      >
+        <Link />
+      </styled.li>
+      <styled.li
+        mx={10}
+      >
+        <Link
+          uri="/search"
+          url="search"
+        >
+          Search
+        </Link>
+      </styled.li>
+    </styled.div>
+  </nav>
+</styled.header>
+`;
