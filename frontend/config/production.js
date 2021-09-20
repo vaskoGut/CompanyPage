@@ -1,4 +1,4 @@
 module.exports = {
-  backend: 'https://www.glamrock.nl',
-  frontend: 'http://localhost:3000',
+  backend: 'http://backend.hidden-ua.duckdns.org/wp',
+  frontend: 'http://hidden-ua.duckdns.org',
 };
